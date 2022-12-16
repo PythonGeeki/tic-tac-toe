@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <style>
+        #GameScreen{
+            border: 5px solid black;
+            border-radius: 20px;
+            border-color: dimgray;
+        }
+        body{
+            text-align: center;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            color: dimgray;
+        }
+        #X{
+            visibility: hidden;
+            display: none;
+        }
+        #O{
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+    <img src="cross.png" id="X" width="200" height="200">
+    <img src="circle.png" id="O" width="200" height="200">
+    <img id="0">
+</head>
+<body>
+    <h2 id="turn"></h2>
+    <canvas id="GameScreen" width="600" height="600"></canvas>
+    <script src="./src/index.js"></script>
+</body>
+</html>
